@@ -1,0 +1,61 @@
+@import '../../styles/variables.module.scss';
+
+.generalContainerHome {
+    max-width: $max-width-platform;
+    margin: 30px auto;
+}
+
+.generalContainerHome .targetTweet {
+    border: 1px solid #000;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.generalContainerHome .targetTweet .nameUser {
+    font-weight: 600;
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.generalContainerHome .targetTweet .headerTarget {
+    display: flex;
+    padding: 10px;
+}
+
+.generalContainerHome .targetTweet .headerTarget img {
+    border-radius: 100%;
+    margin-right: 5px;
+    margin-bottom: 0 !important;
+}
+
+.generalContainerHome .targetTweet .bodyTarget {
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.generalContainerHome .targetTweet .footerTarget {
+    padding: 10px;
+}
+
+.generalContainerHome .targetTweet .footerTarget img {
+    cursor: pointer;
+    margin-left: 45%
+}
+
+  .generalContainerHome .more {
+      float: right;
+      margin-right: 10px;
+      color: $primary-color;
+      cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    .generalContainerHome {
+        padding: 10px;
+    }
+  }
